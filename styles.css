@@ -1,0 +1,95 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+    .body-hr {
+        width: 50%;
+    }
+h1 {
+    font-family: Arial;
+}
+
+p {
+    font-family: Arial;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background: linear-gradient(to right, white, #f0f0f0 300px, #f0f0f0 calc(100% - 300px), white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+    .navbar .left {
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+    }
+
+        .navbar .left p {
+            font-size: 25px;
+        }
+
+    .navbar .right {
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+    }
+
+        .navbar .right a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-family: Arial;
+            font-size: 16px;
+        }
+
+            .navbar .right a:hover {
+                color: #555;
+                text-decoration: underline;
+            }
+
+.content {
+    margin-top: 120px;
+    flex: 1;
+}
+
+footer {
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+    .footer-hr {
+        width: 20%;
+    }
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0 10px;
+    }
+
+        .navbar .right a {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+}
